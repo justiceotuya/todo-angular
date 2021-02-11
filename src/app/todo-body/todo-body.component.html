@@ -1,0 +1,28 @@
+<section class="todo_list_wrapper">
+  <div *ngFor="let item of todoTasks" class="task_row">
+    <input
+      type="checkbox"
+      name="item"
+      id="item"
+      class="todo_task_input"
+      [checked]="item.isCompleted"
+      (click)="handleItemRowClick(item, 'toggle')"
+    />
+    <label
+      for="item"
+      class="todo_task_label"
+      (click)="handleItemRowClick(item, 'toggle')"
+      tabindex="0"
+      (keydown)='handleToggleWithEnterKey($event,item)'
+      [ngClass]="item.isCompleted ? 'is_underlined' : null"
+      >{{ item.task }}</label
+    >
+    <i
+      class="material-icons delete_icon"
+      tabindex="0"
+      (click)="handleItemRowClick(item, 'delete')"
+      (keydown)='handleDeleteWithEnterKey($event,item)'
+      >delete</i
+    >
+  </div>
+</section>

@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+:root {
+  --bg-rhino : #393771;
+  --bg-rhino-dark : #29275f;
+  --bg-deluge : #7e65a9;
+  --bg-wisteria : #a469a7;
+  --bg-tapestry : #bc6ba5;
+  --bg-gumbo : #00c6fd;
+  --bg-vista-blue : #7fcaaa;
+  --bg-athens-gray : #e6e6eb;
+}
+
+/* #29275f
+#00c6fd */

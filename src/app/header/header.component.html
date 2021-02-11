@@ -1,0 +1,9 @@
+<div class="header">
+  <i class="material-icons" tabindex="0">menu</i>
+  <h1 class="header_heading">ToDo List</h1>
+  <i class="material-icons" tabindex="0" (click)="handleToggleInput()">add</i>
+</div>
+
+<div *ngIf="isInputOpen" class="header_input">
+  <input type="text" [(ngModel)]="todo" (keyup)="handleAddTodo($event)" />
+</div>

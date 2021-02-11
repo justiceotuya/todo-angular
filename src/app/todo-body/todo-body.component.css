@@ -1,0 +1,42 @@
+.todo_list_wrapper {
+  max-height: calc(100% - 120px);
+  overflow-x: auto;
+  box-shadow: 0 4px 7px #000000;
+}
+.task_row {
+  background: var(--bg-rhino-dark);
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.todo_task_input {
+  flex: 50px;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+}
+
+.todo_task_label {
+  font-size: 18px;
+  color: var(--bg-athens-gray);
+  flex: calc(100% - 100px);
+  height: 100%;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.todo_list_wrapper:hover .todo_task_label {
+  opacity: 0.7;
+}
+
+.is_underlined {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.delete_icon {
+  color: var(--bg-tapestry);
+  flex: 50px;
+  text-align: center;
+}
